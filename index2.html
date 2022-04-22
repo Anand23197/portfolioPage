@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-content{
+  width: 90%;
+  display: grid;
+  min-height: 1000px;
+  grid-template-columns: 300px 700px;
+}
+.left-section{
+grid-column: span 1;
+background-color: rgb(35, 27, 27);
+color: aliceblue;
+}
+.right-section{
+grid-column: span 1/ span 2;
+padding: 2rem 3rem;
+}
+.left-content{
+  padding: 1rem;
+}
+.profile-image{
+  display: block;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 30%;
+  width: 60%;
+}
+.name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+}
+.designation{
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0rem 0rem 0.5rem 0rem;
+}
+.description{
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+.social-media li{
+  display: inline-flex;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.skills-title{
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5;
+}
+.skill-name{
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+  padding: 0rem 0rem 0.5rem 0rem;
+}
+
+.progress-bar{
+  border: 1px solid white;
+  height: 4px;
+  background-color: blue;
+}
+.right-title{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 674px){
+.main-content{
+   grid-template-columns: repeat(1, 1fr);
+}
+}
+    </style>
+    <script src="https://kit.fontawesome.com/27d57f3787.js" crossorigin="anonymous"></script>
+</head>
+    <body> 
+       <main class="main-content">
+           <section class="left-section">
+              <div class="left-content">
+                  <div class="profile-details">
+                      <div class="profile">
+                          <img class="profile-image" src="https://i.pinimg.com/custom_covers/222x/85498161615209203_1636332751.jpg" alt="pic">
+                      </div>
+                      <h2 class="name">Anand Vishwakarma</h2>
+                      <h3 class="designation">SDE-1</h3>
+                      <p class="description">PHP Full Stack Developer and MERN stack developer</p>
+                  </div>
+                  <div class="contact-info">
+                      <div class="contact-item">
+                          <div class="social-media">
+                              <li class="icon"><a href="https://www.linkedin.com/in/anand-vishwakarma-65b085187/"><i class="fa-brands fa-linkedin"></i></a></li>
+                              <li class="icon"><a href="https://github.com/Anand23197"><i class="fa-brands fa-github"></i></a></li>
+                          </div>
+                          <div class="personal-details">
+                          <li class="icon"><i class="fa-solid fa-envelope"></i>anand23197@gmail.com</li>
+                          <li class="icon"><i class="fa-solid fa-address-book"></i>9301688202</li>
+                          <li class="icon"><i class="fa-solid fa-location-dot"></i>Dist- garhwa, jharkhand</li>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="skills">
+                          <h2 class="skills-title">skills</h2>
+                          <div class="skill-content">
+                              <div class="skill-item">
+                                  <div class="skill-name">
+                                      <h3>HTML</h3>
+                                  </div>
+                                  <div class="skills-progress">
+                                    <progress class="progress-bar" value="32" max="100"></progress>
+                                  </div>
+                              </div>
+                              <div class="skill-item">
+                                <div class="skill-name">
+                                    <h3>Java Script</h3>
+                                </div>
+                                <div class="skills-progress">
+                                  <progress class="progress-bar" value="85" max="100"></progress>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </section>
+           <section class="right-section">
+              <div class="right-main-content">
+                  <section class="about-sec">
+                   <h1 class="right-title">About me</h1>
+                   <p contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur possimus voluptas libero, cumque qui adipisci illo ipsum eligendi mollitia ad commodi recusandae voluptate quia! Adipisci esse cum ab deserunt. Nobis laborum eius eos labore voluptas.</p>
+                  </section>
+                  <section class="education-sec">
+                    <h1 class="right-title">Education</h1>
+                    <p>Msc. computer Science</p>
+                   </section>
+                   <section class="Experience">
+                    <h1 class="right-title">Experience</h1>
+                    <p>Worked with TATA CLASSEDGE</p>
+                   </section>
+              </div>
+           </section>
+       </main>
+    </body>
+
+</html>
